@@ -1,0 +1,216 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css_style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#personal information">Personal Information</a></li>
+  <li><a href="#course">Course</a></li>
+  <li class="dropdown">
+	
+	<a href="javascript:void(0)" class="dropbtn">Web Services</a>
+	 <div class="dropdown-content">
+      <a href="#">WMS</a>
+      <a href="#">WFS</a>
+      <a href="#">WCS</a>
+	 </div>  
+	
+   </li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="ku.jpg"
+  style="width:85%">
+  <img class="mySlides" src="Convocation-24-Senate.jpg"
+  style="width:85%">
+  <img class="mySlides" src="central.jpg"
+  style="width:85%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+<br>
+<br>
+<br>
+
+<div class="clearfix">
+   <img src="logo.png" width=15%>
+   <div> <font size=25vw color=#E84C3D>Hello!</font><font size=4vw> <p> This website includes the information about WebGIS module.
+						The maps in geoserver containing administrative bboundary, district population,
+						landcover, and baselayer are linked in the webpage.</p>
+						<br><br>
+						<center><b><font color=#E84C3D size=6vw>WORKING WITH MULTIPLE MAPS</font></b></center>
+						<center><br><img src="multiple.jpg" width=50% height=50%>
+						</center></font></div>
+</div>
+
+
+<br>
+<br>.
+
+
+
+<!---making three columns-->
+<div class="row1">
+  <div class="column1" style="background-color:#aaa; align="justify">
+		<h1><u>About Kathmandu University...</u></h1>
+			<p>Kathmandu University is an autonomous, not-for-profit, non - government institution dedicated
+			to maintain high standards of academic excellence. It is committed to develop leaders in
+			professional areas through quality education.</p>
+			<p>It is located in a mountainous landscape in Dhulikhel Municipality about 30 kilometers east of
+			Kathmandu (KTM) having round-the-year pleasant climate and panoramic Himalayan Views.
+			KU had a very modest start from a rented building at Tangal, Kathmandu. Now, it has been able
+			to create a built up space of 46,846 square meters.</p>
+	</div>
+ 
+  <div class="column1" style="background-color:#aaa;" align="justify">
+	<h1><u>About Geomatics Engineering...</u></h1>
+		<p>Geomatic engineering is fast growing discipline (that focuses on spatial information, i.e.
+		information that has a location). The speed of development in the field is same as of Information
+		Technology. Geomatics Engineers apply engineering principles to spatial information and implement
+		relational data structures involving measurement sciences, thus using Geomatics as Spatial
+		Engineers. Geomatics engineers manage local, regional and global spatial data for infrastructure
+		development.</p>
+  </div>
+  
+  <div class="column1" style="background-color:#aaa;"align="justify">
+	<h1><u>Work done in WebGIS Module...</u></h1>
+		<p>Web GIS is a type of distributed information system, comprising at least a server and a client, where the server i
+		s a GIS server and the client is a web browser, desktop application, or mobile application.</p>
+		<p>At the early stage, spatial database was imported in postgres with postgis extension and certain query were performed
+		to relate two tables. The database of nepal district and the corresponding population were imported in geoserver. Various scripts were
+		used to make a thematic map showing the population density of Nepal. The raster image in .tiff format was also used in geoserver in which 
+		the land cover of nepal was classified in the map. The URL was studied to make legend of the map in geoserver.</p>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<font face="Courier New"><table cellspacing="10" style = "width:80%;background-color:#aaaaaa;">
+	<tr><th height="40"> <h1>Personal Information</h1> </th></tr>
+	<tr><td> 
+	<br><pre><p style="font-family:Verdana;">First Name: Prashant 		Last Name: Thapaliya<br>
+	<img src="prashant.jpg" width=40% align="right">
+	<br>Age: 21	 	Birthday: 1997/05/24<br>
+	<br>Father's Name: Ramji Prasad Thapaliya<br>
+	<br>Mother's Name: Rita Thapaliya<br>
+	<br>Brother's Name: Pratik Thapaliya<br>
+	<br>Address: Budanilkantha-10, Kathmandu, Nepal<br>
+	<br>Phone Number: 984091573<br>
+	<br>Email Address: <font color=blue><u>prashantthapaliya8989@gmail.com</font></u>
+	<br>...................................................................................................................................................................................
+	<br>Education:
+	<br>		  2000-2012		Joseph High Schoool<br>
+	<br>		  2013-2014 		Liverpool International College<br>
+	<br>		  2015-till date 		Kathmandu University
+	<br>...................................................................................................................................................................................
+	<br>Languages:
+	<br>		  Nepali, English<br></p></pre>
+	
+	</tr></td>
+</table>
+</font>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h1><u>Contact Us</u></h1>
+  </div>
+  <div class="row">
+    
+    <div class="column">
+	<h1>Give us Feedback</h1>
+      <form action="/action_page.php">
+        <label for="fname"><h2><b>First Name</b></h2></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname"><h2><b>Last Name</b></h2></label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country"><h2><b>Country</b></h2></label>
+        <select id="country" name="country">
+          <option value="australia"><h2><b>Nepal</b></h2></option>
+          <option value="canada"><h2><b>Peru</b></h2></option>
+          <option value="usa"><h2><b>USA</b></h2></option>
+        </select>
+        <label for="subject"><h2><b>Subject</b></h2></label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:160px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+	
+	<div class="column">
+	<h1>For more information...</h1>
+	<br><br><br>
+	<a href="#" class="fa fa-facebook"></a><br>
+	<a href="#" class="fa fa-google"></a><br>
+	<a href="#" class="fa fa-linkedin"></a><br>
+	<a href="#" class="fa fa-youtube"></a><br>
+	<a href="#" class="fa fa-instagram"></a><br>
+      
+    </div>
+  </div>
+  <div>
+  <div id="map"></div>
+   <div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(27.61726,85.53778);
+		
+        var mapProp = {
+            center: myCenter,
+            zoom: 16,
+            scrollwheel: true,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+	    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var marker = new google.maps.Marker({position: myCenter});
+		var infowindow = new google.maps.InfoWindow({content:'<p><font color=red>My location</font><p>'});
+		infowindow.open(map,marker);
+	
+		marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2a8QtzSaEPLeybBaPZpudLLxZq56hcCo&callback=myMap"></script>
+
+
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
